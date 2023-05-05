@@ -25,7 +25,6 @@ mongoose.connect(process.env.DB_URI, {
 //routes prefix
 
 app.use('/api/auth',require("../api/routes/auth"))
-app.use('/api/link', require("../api/routes/routes.link"));
 app.use('/api/post', require("../api/routes/routes.post"));
 //start server
 app.listen(port, ()=>console.log(`server running at https://localhost:${port}`));
